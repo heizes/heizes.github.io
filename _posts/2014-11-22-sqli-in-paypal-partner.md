@@ -5,8 +5,6 @@ date: 2014-11-22T07:14:07-05:00
 description: "error based sql injection in easy2export.com"
 ---
 
-It’s been a year after my website ‘jeroldcamacho.com’ was gone because I forgot to renew my domain and I don’t even have a backup of my website nor my blog posts. As the title says “how i got my 1000$ from paypal partner site.”. So, here it goes.
-
 **Easy2Export** is one of paypal partner website, yeah it is! [[..]](http://www.ecommercebytes.com/cab/abn/y13/m12/i24/s04)
 
 <p align="center">
