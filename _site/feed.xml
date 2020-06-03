@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Mar 2020 05:22:07 -0400</pubDate>
-    <lastBuildDate>Wed, 18 Mar 2020 05:22:07 -0400</lastBuildDate>
+    <link>https://miraeu.github.io/</link>
+    <atom:link href="https://miraeu.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 03 Jun 2020 12:18:44 +0800</pubDate>
+    <lastBuildDate>Wed, 03 Jun 2020 12:18:44 +0800</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
     
       <item>
@@ -169,9 +169,9 @@ Please talk to HR ASAP.
 
 &lt;p&gt;Badly need more time to learn crypto, pwn and reverse engineering.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 28 Dec 2019 05:34:17 -0500</pubDate>
-        <link>http://localhost:4000/2019/inferno-ctf-2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/inferno-ctf-2019/</guid>
+        <pubDate>Sat, 28 Dec 2019 18:34:17 +0800</pubDate>
+        <link>https://miraeu.github.io/2019/inferno-ctf-2019/</link>
+        <guid isPermaLink="true">https://miraeu.github.io/2019/inferno-ctf-2019/</guid>
         
         
       </item>
@@ -180,9 +180,9 @@ Please talk to HR ASAP.
         <title>hello world</title>
         <description>&lt;p&gt;&lt;img src=&quot;https://www.memecreator.org/static/images/memes/5052832.jpg&quot; alt=&quot;hello world&quot; /&gt;&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Sep 2019 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/2019/hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/hello-world/</guid>
+        <pubDate>Sun, 15 Sep 2019 00:00:00 +0800</pubDate>
+        <link>https://miraeu.github.io/2019/hello-world/</link>
+        <guid isPermaLink="true">https://miraeu.github.io/2019/hello-world/</guid>
         
         
       </item>
@@ -193,9 +193,10 @@ Please talk to HR ASAP.
 
 &lt;p&gt;&lt;strong&gt;Easy2Export&lt;/strong&gt; is one of paypal partner website, yeah it is! &lt;a href=&quot;http://www.ecommercebytes.com/cab/abn/y13/m12/i24/s04&quot;&gt;[..]&lt;/a&gt;&lt;/p&gt;
 
-&lt;center&gt;
-&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/yeah-m.jpg&quot; /&gt;
-&lt;/center&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/yeah-m.jpg&quot; /&gt;
+&lt;/p&gt;
+
 &lt;p&gt;&lt;br /&gt;
 At first, i tried to break the login form. After a few minutes of testing, I foundout that the login form is vulnerable to POST SQL Injection.&lt;/p&gt;
 
@@ -207,29 +208,30 @@ Host: easy2export.com
 LoginForm[username]=’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+&amp;amp;LoginForm[password]=’&amp;amp;LoginForm[accounttype]=sub&amp;amp;LoginForm[rememberMe]=0&amp;amp;yt0=
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;
-&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/easy2export-sql-injection1.png&quot; /&gt;
-&lt;/center&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/easy2export-sql-injection1.png&quot; /&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 I immediately reported this to PayPal and they fixed the vulnerability issue quickly. &lt;strong&gt;[10/30/2014 09:21:53]&lt;/strong&gt;
 &lt;br /&gt;&lt;/p&gt;
-&lt;center&gt;
-&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/inhale-m.jpg&quot; /&gt;
-&lt;/center&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/inhale-m.jpg&quot; /&gt;
+&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 In their bug bounty program guidelines, it is noted that sql injection in paypal partner sites will receive 1000$.
 .
 .
 And they checked the eligibility of my report so they then send me the reward amounting to 1000$. &lt;strong&gt;[11/22/14 6:23:35]&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://jmrncz.files.wordpress.com/2016/05/paypal-bounty.png&quot; /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;/assets/images/paypal-bounty.png&quot; /&gt;
+&lt;/p&gt;
 
 &lt;p&gt;Thanks for reading! stay tuned for more blog posts.&lt;/p&gt;
 
 </description>
-        <pubDate>Sat, 22 Nov 2014 07:14:07 -0500</pubDate>
-        <link>http://localhost:4000/2014/sqli-in-paypal-partner/</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/sqli-in-paypal-partner/</guid>
+        <pubDate>Sat, 22 Nov 2014 20:14:07 +0800</pubDate>
+        <link>https://miraeu.github.io/2014/sqli-in-paypal-partner/</link>
+        <guid isPermaLink="true">https://miraeu.github.io/2014/sqli-in-paypal-partner/</guid>
         
         
       </item>

