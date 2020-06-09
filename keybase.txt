@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/miraiz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://miraeu.github.io
+  * I am miraiz (https://keybase.io/miraiz) on keybase.
+  * I have a public key with fingerprint B6BB 6546 13C7 5660 0AE0  42AF 930E 8201 8293 0D02
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200c47ec28a4041ac754458ddbd0c239bdc6758fb93a6d2c7369029a7757d695ce0a",
+      "fingerprint": "b6bb654613c756600ae042af930e820182930d02",
+      "host": "keybase.io",
+      "key_id": "930e820182930d02",
+      "kid": "01014df278c2ecaef367f69b560a5c7344d251dd5a44e9cbf762d1166e1005febb790a",
+      "uid": "18988ee709e89c7db66b4e4d319d0519",
+      "username": "miraiz"
+    },
+    "service": {
+      "hostname": "miraeu.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1591719469,
+  "expire_in": 157680000,
+  "prev": "3f313a18c0ba4e7c88935eccb1b7d902c73fe2560bea5c49e44b8e0d7199f74b",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNwAnicbVJ9TJVVGL8YxqShF6RcFkbvGOsmsPf7A8TRlzlhoeFmwo3be95z3ss7
+4d7r/QJkbMAVw82bHyAfRkJKwBYBycBJFkGIhbJE1AtrarIiIMGQLc0COpdy64/O
+P+ec5/k9v/N7fufpD3lCFxxQvrokoKQ8ZEXApd4aly7zdldsAQGsMJ+ILyD2oOUN
+ZUPkcJr2aJCIJ0iKJkmFFZBCizJLspSsCBzLciKEAJIKzUgAKrzAiSqQGJmHtCIw
+vETSkiwInAB5iVMQKRMxhKpZzMhus2sWJ6YFPAA8x/IUg+l4niRlRLK0rEoMiUSa
+pEQanyBJ48Isq8NfgcUB2YHiNCuO4YtpWd7/4B/rJikWqrQgKjRSZKQyvKDyEuB4
+UuawRpaFNEdByMksiyQFqAJPQ4rieUSRJKciAARpWbdrmY4SJVFESCAlJEqKAAHP
+AxaxkKEkSHKU5Ac6kN0i5yCMztHssraPKIwhcMytKchvq7+P/+SRK86sObNc4J+O
+bHar06pYs3E2y+m0OeL91c58mx+ei4DpXyIT0CwQO4kr3Mju0KwWIp7CSMWp+Zkp
+TqIESmJ5KYZAeTbNjkyaH8EJvEji5X8HuTElozIUI1OiQgKZRYIiihLDIUUBFBAg
+/j7skIpobBZA2C5WQiwLRERCTC6pAgsIf2t7LVYinscyZTOmdGhmi+x02RFR2Ndr
+DNQFBOueXLnCP2G64FX6x3M3e16v8453FN69ucG0sPVben35c0B3Qdn7fWFZdFXS
+YLg3vcUzszm1eTGHbdu2eCviut5z+usvH9aO9SYs7X8r8cgbvo25gePfDLXfqstc
+vOpzHwyOO1qdEP5rQ1lN8Vxt0obCk/l1ERcv+coOqKVh5o6B7P7Y7efMZ5/5Yc3r
+zZd3DLScODNyX5/X8t1UaaCWm244fMiYlj9hKK2fGrpR+8jerwvzhK77ub2tee0h
+btc1r68jKXU0/KNjIfO5jQ3Gyqr3Rg0Xr5SAv6qWmgbvNTVkfhV7AS36Xs0CLsNU
+a8bG4ZfXL5Q9eDhckZH38fu+axFfNNZ4J3tOvfvgyKzNuGVbkOx883fDSMTnJs/b
+Hz6f0rW5Lz8D1ibPTTUF8b/d60xZW3Xj7uJkiqWir6V45LOenjrrnYHuzt16y/VP
+d64znrAMGqu0oFpq5nTR8aejRM8rEUOtq2zVYUxskXHgYHTBbcdNfnU3s2Y07Z3I
+5oSz7la9U5rfr13eVLz7TlfpLzNblZcaXYOpnnp1S4/82qbKjMlz9aZdQ975n15c
++WPowoR+NurPxPHQ6aYl9MGZrPGdIS8kwshTM8mPqOTjB9KMKYez5zqToxuKhLGp
+SjWlTcl+dronfbLBEXMlcrZ9O2GqOdQ9MF7R7BafmjVMGMZ6x+6f9EZFV34yXb1D
+t/RHyzCH9p0/drWuovJv8yzOQA==
+=UiRU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/miraiz
+
+==================================================================
