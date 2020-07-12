@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://miraeu.github.io/2014/sqli-in-paypal-partner/</loc>
-<lastmod>2014-11-22T20:14:07+08:00</lastmod>
-</url>
-<url>
-<loc>https://miraeu.github.io/2019/hello-world/</loc>
+<loc>http://localhost:4000/2019/hello-world/</loc>
 <lastmod>2019-09-15T00:00:00+08:00</lastmod>
 </url>
 <url>
-<loc>https://miraeu.github.io/2019/inferno-ctf-2019/</loc>
+<loc>http://localhost:4000/2019/inferno-ctf-2019/</loc>
 <lastmod>2019-12-28T18:34:17+08:00</lastmod>
 </url>
 <url>
-<loc>https://miraeu.github.io/about/</loc>
+<loc>http://localhost:4000/about/</loc>
 </url>
 <url>
-<loc>https://miraeu.github.io/</loc>
+<loc>http://localhost:4000/</loc>
 </url>
 </urlset>
