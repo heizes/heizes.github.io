@@ -34,7 +34,9 @@ plugins:
   - jekyll-sitemap
   - bourbon
   - jekyll-paginate
+  - jekyll-remote-theme
 
+remote_theme: heiswayi/the-plain
 # navbar pages
 navbar:
   - slug : about
