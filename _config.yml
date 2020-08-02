@@ -1,65 +1,45 @@
-# Site settings
-title_left    : ""
-title_right   : "mirai" # default: ""
-description   : ""
-keywords      : ""
-url           : https://dotmirai.github.io # site url
-baseurl       : "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover         : "" # image uri like logo/cover image for site seo
+# Site Info
+title:              "mirai"
+description:        ""
+author_name:        "mirai" # change this to your name
+logo_url:           https://avatars0.githubusercontent.com/u/6681263?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
-google_analytics  : UA-XXXXX-XX
-twitter_username  : "_miraeu"
-comments_enabled  : false # if enabled (set to true), please provide your disqus_username
-disqus_shortname  : ""
-postshare_enabled : false
+# Site Settings
+url:                https://dotmirai.github.io # main url
+baseurl:            ""
+permalink:          /:title # Post permalink
+timezone:           Hongkong # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
 
-# Build settings
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : rouge
-
-source      : ./
-destination : ./_site
-
-# Sass configuration
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
 sass:
-  sass_dir  : assets/scss
-  style     : compressed # expanded
+    style:          :compressed
 
-# Author settings
-author:
-  name     : "mirai"
-
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
 plugins:
   - jekyll-sitemap
-  - bourbon
-  - jekyll-paginate
-  - jekyll-remote-theme
 
-remote_theme: heiswayi/the-plain
-# navbar pages
-navbar:
-  - slug : about
-    title: About
-  - slug : blog
-    title: Blog
 
-exclude:
-  - "gulp"
-  - "node_modules"
-  - "bower"
-  - "bower_components"
-  - "config.rb"
-  - "src"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - ".rvmrc"
-  - ".rbenv-version"
-  - "package.json"
-  - "gulpfile.js"
-  - "README.md"
-  - "Rakefile"
-  - "changelog.md"
-  - "script"
-  - "vendor"
-  - "thinkspace.gemspec"
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"

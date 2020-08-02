@@ -1,17 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
+    <title>mirai</title>
     <description></description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 02 Aug 2020 09:24:19 +0800</pubDate>
-    <lastBuildDate>Sun, 02 Aug 2020 09:24:19 +0800</lastBuildDate>
-    <generator>Jekyll v4.0.1</generator>
+    <link>http://localhost:4000</link>
     
-      <item>
-        <title>infernoCTF 2019</title>
-        <description>&lt;h1 id=&quot;merry-christmas-forensic-200&quot;&gt;Merry Christmas (Forensic, 200)&lt;/h1&gt;
+      
+        <item>
+          <title>infernoCTF 2019</title>
+          <description>&lt;h1 id=&quot;merry-christmas-forensic-200&quot;&gt;Merry Christmas (Forensic, 200)&lt;/h1&gt;
 &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
 &lt;p&gt;OSINT is the way
 &lt;br /&gt;
@@ -169,23 +166,11 @@ Please talk to HR ASAP.
 
 &lt;p&gt;Badly need more time to learn crypto, pwn and reverse engineering.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 28 Dec 2019 18:34:17 +0800</pubDate>
-        <link>http://localhost:4000/2019/inferno-ctf-2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/inferno-ctf-2019/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>hello world</title>
-        <description>&lt;p&gt;&lt;img src=&quot;https://www.memecreator.org/static/images/memes/5052832.jpg&quot; alt=&quot;hello world&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sun, 15 Sep 2019 00:00:00 +0800</pubDate>
-        <link>http://localhost:4000/2019/hello-world/</link>
-        <guid isPermaLink="true">http://localhost:4000/2019/hello-world/</guid>
-        
-        
-      </item>
+          <pubDate>2019-12-28T18:34:17+08:00</pubDate>
+          <link>http://localhost:4000/inferno-ctf-2019</link>
+          <guid isPermaLink="true">http://localhost:4000/inferno-ctf-2019</guid>
+        </item>
+      
     
   </channel>
 </rss>

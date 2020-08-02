@@ -1,16 +1,12 @@
 ---
 layout: page
 title: About
-permalink: /about/
 ---
+
+Hello.
 
 I’m a 2nd-year college student, taking B.S. in Computer Science at Adamson University. Part-time Bug Bounty Hunter and Penetration Tester that focuses on web applications. I started participating in bug bounty platforms like Bugcrowd and Hackerone in early 2014. I was acknowledged on several websites such as Google, Microsoft, Twitter, Samsung, Blackberry, etc. I also play CTF and HackTheBox in my leisure time.
 
-[<img src="/assets/icons/twt.png" width="40" height="40">](http://twitter.com/dotmirai)
-[<img src="/assets/icons/fb.png" width="40" height="40">](http://facebook.com/InvalidWebSec)
-[<img src="/assets/icons/git.png" width="40" height="40">](http://github.com/dotmirai)
-[<img src="/assets/icons/kb.png" width="40" height="40">](http://keybase.io/dotmirai)
-[<img src="/assets/icons/htb.png" width="40" height="40">](http://hackthebox.eu/profile/89243/)
-[<img src="/assets/icons/bc.png" width="40" height="40">](http://bugcrowd.com/dotmirai)
-[<img src="/assets/icons/h1.jpg" width="40" height="40">](http://hackerone.com/dotmirai)
-[<img src="/assets/icons/ctf.png" width="40" height="40">](http://ctftime.org/team/73615)
+[Twitter](http://twitter.com/dotmirai), [Facebook](http://facebook.com/InvalidWebSec), [Github](http://github.com/dotmirai), [Keybase](http://keybase.io/dotmirai), [HackTheBox](http://hackthebox.eu/profile/89243), [Bugcrowd](http://bugcrowd.com/dotmirai), [Hackerone](http://hackerone.com/dotmirai), [CTFtime](http://ctftime.org/team/73615)
+
+
