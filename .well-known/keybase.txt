@@ -1,56 +1,68 @@
 ==================================================================
-https://keybase.io/dotmirai
+https://keybase.io/heize
 --------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am an admin of https://dotmirai.github.io
-  * I am dotmirai (https://keybase.io/dotmirai) on keybase.
-  * I have a public key ASDO8VVmPTFz8kfp1oS0MGQUHqG7Kch4EHcdTAKPt84Cwwo
+  * I am an admin of https://heizes.github.io
+  * I am heize (https://keybase.io/heize) on keybase.
+  * I have a public key with fingerprint B068 AB51 F555 32BC B312  7B97 5C99 CE36 614E 88CA
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "0120cef155663d3173f247e9d684b43064141ea1bb29c87810771d4c028fb7ce02c30a",
+      "eldest_kid": "0101475f4899b49900c7e54c809ebdf7e113c44d088202275a8f65ed2491246da2de0a",
+      "fingerprint": "b068ab51f55532bcb3127b975c99ce36614e88ca",
       "host": "keybase.io",
-      "kid": "0120cef155663d3173f247e9d684b43064141ea1bb29c87810771d4c028fb7ce02c30a",
-      "uid": "6ed82ada283b992b942a6c5da7713119",
-      "username": "dotmirai"
-    },
-    "merkle_root": {
-      "ctime": 1594576674,
-      "hash": "32707865b38be56b6b2f95d12018866cdd7daae4dc0393de2acbda5f6c96eeb390a20d1517be2a23008f57b67593e6287b8162b66241a471bc8d1d3d93c477be",
-      "hash_meta": "0eacddcc1cb6dea85d272e41b4e2519f03d527c2e98c81746c518ded0dd34ff6",
-      "seqno": 16950277
+      "key_id": "5c99ce36614e88ca",
+      "kid": "0101475f4899b49900c7e54c809ebdf7e113c44d088202275a8f65ed2491246da2de0a",
+      "uid": "a673712b94dea6ed2a8c06ac3241e519",
+      "username": "heize"
     },
     "service": {
-      "entropy": "2yiZLLtsb2ebHTzZSp0fn2OD",
-      "hostname": "dotmirai.github.io",
+      "hostname": "heizes.github.io",
       "protocol": "https:"
     },
     "type": "web_service_binding",
-    "version": 2
+    "version": 1
   },
-  "client": {
-    "name": "keybase.io go client",
-    "version": "5.5.0"
-  },
-  "ctime": 1594576746,
-  "expire_in": 504576000,
-  "prev": "bfb77787c00bcf8ace798363a33b20069a77d656d8cdb3dc9d2f0fab89c47435",
-  "seqno": 7,
+  "ctime": 1599379088,
+  "expire_in": 157680000,
+  "prev": "83de670ccc0499167bfcf8dcf9e0379ca33ca446a08793bd505d490924dc2db6",
+  "seqno": 3,
   "tag": "signature"
 }
 
 which yields the signature:
 
-hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgzvFVZj0xc/JH6daEtDBkFB6huynIeBB3HUwCj7fOAsMKp3BheWxvYWTESpcCB8Qgv7d3h8ALz4rOeYNjozsgBpp31lbYzbPcnS8Pq4nEdDXEIBRzUJDyspMmBg2nS6rljF9zE0qpo/wCBys/nmRynppAAgHCo3NpZ8RAkv/61G87pDUpuwtgNrZAmJXY4vhjZqpupaA4nsYMFaHE58oAs4M5jLNLDoeLABbTJh05x5XidPoZAz6j944bBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIK3BGm1eRQyZjwJiqXoRqpJgAOx9M1013zULpmXlIQNao3RhZ80CAqd2ZXJzaW9uAQ==
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJZSFRRGB4tKyeDHsoyIuE+NGkzeu5+z0QSRCXYQ9GCLTjds9yZi82d
+ceZqzUwKPbT4Ulo6SVJIOPgQGraX0SJGUUH7Sg9tFKFCGxkk1LlW0EOPnZfD+f/v
++873/fwDU8a53FkjuxflX5q/bEPWzSttta7A6nRTikMRkuD8Ka6ajl10M6FxO1Bt
+Es7PAR7wkiobkgYhkiAEAKtUlrAGIEXEUCnPi1iSCNA0AQiCKuuaociUCBLkBUkh
+ukAo0DkvZ5hWkMaiMdOymSwCiqYjmTdkWRYFhJHICyqCqowhxFRUFF6imoYdYigS
+dxjMHNLjtMSMsBp7BMbs/QP/n33XjsnpiiqqvICgRKiuMJiuYaDoWBQknso8dIBx
+GrP0MGXoEDWTlKv3cqxUZ2LqTNWJ8Xc7XhI07VAt+hUoGovYERzZ7HRtOxr3O2w7
+EXXgWygK/BYKINMibJCMUUdjcTNicX6eIbFtOsq8DKGoQpbJy9GtUTNGA6aDkFVF
+A+w4/9A6JqmJhCoqwBgDNhteUZGBDY1gA1LABLAuiliXJEUHmgpFRGQgEwkCKEgE
+CwQpnBOtxopwfpHZ1INMMm4GLd2ujbHc/Zc3jndluV0TcrKdBXO5c6f+Wbvud5Nc
+3YufN4+X3Oltx3v05b70x0PrnpSN+oQl4YfXVngujEtOtsr76j3f2otTo0XT1xaQ
+zOD22+GK1pZE8Ebp9dx5h/FgZqhuVaHK53k+NKaWehry0+9PV709dfJkTiLs29qV
+eFVRPHdja1n3nPrS4YnTvhftmlk4K/tO4b3R82eqel8cQ+ULklb7rf4vV9avG3i2
+5uIbuTPkelczcLd+g89btC/1NUlmPGp4sTfY1niu/cfCPmN2846zKyozb1+enrYo
+b9On2YMFWLvT9TFW3vBgpLcnMdxUXHbwaOX+M7c6Ws/2ZRLy05WvjeoDHVc/v5lj
+DT1eQnbuye80ki1PLhwxTry+j34CmvRCSA==
+=2fGN
+-----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
 
-View my publicly-auditable identity here: https://keybase.io/dotmirai
+View my publicly-auditable identity here: https://keybase.io/heize
 
 ==================================================================
