@@ -5,7 +5,7 @@ author_name:        "mirai" # change this to your name
 logo_url:           https://avatars0.githubusercontent.com/u/6681263?v=4 # Get it from GitHub API: https://api.github.com/users/<username>
 
 # Site Settings
-url:                https://x6n.github.io # main url
+url:                https://heizes.github.io # main url
 baseurl:            ""
 permalink:          /:title # Post permalink
 timezone:           Hongkong # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
