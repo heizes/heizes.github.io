@@ -2,27 +2,46 @@
 layout: default
 ---
 
-<article>
-
-	<div class="center">
-		<h1 class="title">{{ page.title }}</h1>
-		<time class="code">{{ page.date | date: '%B %-d, %Y' }}</time>
-	</div>
-
-	<div class="divider"></div>
-
-	{{ content }}
-
+<article class="container-post">
+  <div class="post-title">
+    <h1>{{ page.title }}</h1>
+  </div>
+  <div class="post-author">
+    <span>{{ site.name }}</span>
+  </div>
+  <div class="post-content">
+    {{ content }}
+  </div>
+  <div class="post-info">
+    <div class="post-date">
+      {{ site.data.lang[site.language].post_write_date }}{{ page.date | date: "%Y-%m-%d" }}{% if page.last_modified_at %}, {{ site.data.lang[site.language].post_update_date }}{{ page.last_modified_at | date: "%Y-%m-%d" }}{% endif %}.
+    </div>
+    <div class="post-categories">
+      <span>{{ site.data.lang[site.language].post_categories }}</span>
+      {% for category in page.categories %}
+      <a href="{{ site.baseurl }}/category/{{ category | slugify }}" class="post-category">{{ category }}</a>
+      {% endfor %}
+    </div>
+    <div class="post-tags">
+      <span>{{ site.data.lang[site.language].post_tags }}</span>
+      {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}/tag/{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
+      {% endfor %}
+    </div>
+    <div class="post-tools">
+      {% if page.next %}
+      <div>
+        <span>{{ site.data.lang[site.language].post_next }}</span><a href="{{ page.next.url }}">{{ page.next.title }}</a>
+      </div>
+      {% endif %}
+      {% if page.previous %}
+      <div>
+        <span>{{ site.data.lang[site.language].post_previous }}</span><a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+      </div>
+      {% endif %}
+    </div>
+    {% if site.comments %}
+      {% include comments.html %}
+    {% endif %}
+  </div>
 </article>
-
-<div class="page-navigation code">
-	{% if page.next.url %}
-    <a class="next" href="{{ page.next.url | prepend: site.baseurl | prepend: site.url }}" title="NEXT: {{page.next.title}}">&lt;&lt;</a>
-		<span> &middot; </span>
-  {% endif %}
-		<a class="home" href="{{ "/" | prepend: site.baseurl | prepend: site.url }}" title="Back to Index">Index</a>
-  {% if page.previous.url %}
-		<span> &middot; </span>
-    <a class="prev" href="{{ page.previous.url | prepend: site.baseurl | prepend: site.url }}" title="PREV: {{page.previous.title}}">&gt;&gt;</a>
-  {% endif %}
-</div>
