@@ -4,34 +4,34 @@ https://keybase.io/heize
 
 I hereby claim:
 
-  * I am an admin of https://heizes.github.io
+  * I am an admin of https://heize.codes
   * I am heize (https://keybase.io/heize) on keybase.
-  * I have a public key with fingerprint B068 AB51 F555 32BC B312  7B97 5C99 CE36 614E 88CA
+  * I have a public key with fingerprint 5056 0DCB FD09 9C1E 4D17  ACC4 114F 4B20 17FF 126A
 
 To do so, I am signing this object:
 
 {
   "body": {
     "key": {
-      "eldest_kid": "0101475f4899b49900c7e54c809ebdf7e113c44d088202275a8f65ed2491246da2de0a",
-      "fingerprint": "b068ab51f55532bcb3127b975c99ce36614e88ca",
+      "eldest_kid": "01011338e75d98b1f152501ac0e66a6715829f4eb97aa5746c6a6a28b68ee06f70cd0a",
+      "fingerprint": "50560dcbfd099c1e4d17acc4114f4b2017ff126a",
       "host": "keybase.io",
-      "key_id": "5c99ce36614e88ca",
-      "kid": "0101475f4899b49900c7e54c809ebdf7e113c44d088202275a8f65ed2491246da2de0a",
+      "key_id": "114f4b2017ff126a",
+      "kid": "01011338e75d98b1f152501ac0e66a6715829f4eb97aa5746c6a6a28b68ee06f70cd0a",
       "uid": "a673712b94dea6ed2a8c06ac3241e519",
       "username": "heize"
     },
     "service": {
-      "hostname": "heizes.github.io",
+      "hostname": "heize.codes",
       "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1599379088,
+  "ctime": 1610377100,
   "expire_in": 157680000,
-  "prev": "83de670ccc0499167bfcf8dcf9e0379ca33ca446a08793bd505d490924dc2db6",
-  "seqno": 3,
+  "prev": "44742b2848c29360d16e74608d9c2ddb13ee08b2fe1ce9ce14dc769c51e78700",
+  "seqno": 13,
   "tag": "signature"
 }
 
@@ -41,23 +41,23 @@ which yields the signature:
 Version: Keybase OpenPGP v2.1.13
 Comment: https://keybase.io/crypto
 
-yMImAnicrVJZSFRRGB4tKyeDHsoyIuE+NGkzeu5+z0QSRCXYQ9GCLTjds9yZi82d
-ceZqzUwKPbT4Ulo6SVJIOPgQGraX0SJGUUH7Sg9tFKFCGxkk1LlW0EOPnZfD+f/v
-+873/fwDU8a53FkjuxflX5q/bEPWzSttta7A6nRTikMRkuD8Ka6ajl10M6FxO1Bt
-Es7PAR7wkiobkgYhkiAEAKtUlrAGIEXEUCnPi1iSCNA0AQiCKuuaociUCBLkBUkh
-ukAo0DkvZ5hWkMaiMdOymSwCiqYjmTdkWRYFhJHICyqCqowhxFRUFF6imoYdYigS
-dxjMHNLjtMSMsBp7BMbs/QP/n33XjsnpiiqqvICgRKiuMJiuYaDoWBQknso8dIBx
-GrP0MGXoEDWTlKv3cqxUZ2LqTNWJ8Xc7XhI07VAt+hUoGovYERzZ7HRtOxr3O2w7
-EXXgWygK/BYKINMibJCMUUdjcTNicX6eIbFtOsq8DKGoQpbJy9GtUTNGA6aDkFVF
-A+w4/9A6JqmJhCoqwBgDNhteUZGBDY1gA1LABLAuiliXJEUHmgpFRGQgEwkCKEgE
-CwQpnBOtxopwfpHZ1INMMm4GLd2ujbHc/Zc3jndluV0TcrKdBXO5c6f+Wbvud5Nc
-3YufN4+X3Oltx3v05b70x0PrnpSN+oQl4YfXVngujEtOtsr76j3f2otTo0XT1xaQ
-zOD22+GK1pZE8Ebp9dx5h/FgZqhuVaHK53k+NKaWehry0+9PV709dfJkTiLs29qV
-eFVRPHdja1n3nPrS4YnTvhftmlk4K/tO4b3R82eqel8cQ+ULklb7rf4vV9avG3i2
-5uIbuTPkelczcLd+g89btC/1NUlmPGp4sTfY1niu/cfCPmN2846zKyozb1+enrYo
-b9On2YMFWLvT9TFW3vBgpLcnMdxUXHbwaOX+M7c6Ws/2ZRLy05WvjeoDHVc/v5lj
-DT1eQnbuye80ki1PLhwxTry+j34CmvRCSA==
-=2fGN
+yMIfAnicrVJbSBVBGD52KsnwAkUP+VBsKlh2mtmz16NG0kOppBlZSuVxd3ZWF/Xs
+urteTyHlgxQKBXahzCsSGmmRJKaihhJh14eihwghhJIyFKXgKDQrBT302NMw3/99
+H9/3z0xGul0RYdsLG+n0ocSWsOmJ5gqXf6WoMUjJulJD+YJUCV47cKmCLdtfoimU
+jwIQQOj1CphnFVGQoQpZmgVQQgBznMTxkBVoUWWwLPKSxPIMhwgq0YLMCRgDTuUB
+UoBEJVGqFijCpmFqAZvYsoDlgIJkVQGiiCBmFMhLCDEQMioj0wDyqgppzhEW65aj
+IOFkycIeTScYufjX4v2D/59zV6zZEYWXh7QsMgqWOKzQkoAAJyEvzUDMQtEhWtgM
+SGWYsIuxVoupc0kUgSo1hJ2tOjX+HnuQTtZMdIap2zrSS52BbRuWzxHaNYbDrMKy
+/7eHX9YCCtkhUVRi09L0AOWDhIlszTGFHARenocAJFG42tBM7NccBstzAgAOapi4
+klgyDM/QMi0wAqJFL3kEyGFSHwiKiGhFkaGX9BdkWsUQYRFhyCiI50TEQswLPACU
+06o8oBNvL8kpFRFPSysKSHaFSTo/GT+93hUW4dq4YR35XE2uiE0xf77c8MXwlaiS
+L3Nx0omCmZ3t/o7c5lThZPzDfbUDoczZH49ThmeeB+tDZ9X3Z643VS9N5YykDGV2
+jjyo8xUmvzhyL64/0XMlc3/tNXXbdFl39J7QcXfD6GwqjJz8upBx2OoaiMofjXJ/
+i+kRly+56/r2Zt0Pn1gwLqd/bEruedt5qjWj1IwtqWrV59tg2LKpecZ3DD1rP2/k
+HModnZ9L6g6M6TePTkYH0wbdj3Y1bM1etBNubT6QveX1z9i8gYJ3q8VXrXJj9GCo
+/tPL3sZjLXE3cqcWv/vAm+T+jgti1+1Vu6Pvw/TS07xyMW0wfeyu8blM5At64/vg
+nfj02ba6/N0NCVmvhF8t5T8F
+=KT1G
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
